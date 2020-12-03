@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+}
+
+.test-row:hover {
+  opacity: 0.9;
+}

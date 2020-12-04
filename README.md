@@ -12,14 +12,14 @@ You can use any web-based framework and libraries you like. For the time/value b
 Thresholds:
 
 - normal
-  ** value: 0 - 49
-  ** color: green
+  - value: 0 - 49
+  - color: green
 - warning
-  ** value: 50-99
-  ** color: grey
+  - value: 50-99
+  - color: grey
 - serious warning
-  ** value: 100-149
-  ** color: orange
+  - value: 100-149
+  - color: orange
 - critical warning
-  ** value: 150-200
-  ** color: red
+  - value: 150-200
+  - color: red

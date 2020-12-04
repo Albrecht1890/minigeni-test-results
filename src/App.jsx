@@ -46,8 +46,15 @@ class App extends Component {
         <h1>MiniGeni Test Results</h1>
         <div className="table-responsive">
           <Table id={this.state.selectedTestID} data={this.state.data} selectTest={this.selectTest} updateGraph={this.selectTestDataForGraph} />
+          <div >
+            <small>Color description:</small>
+            <small className="badge badge-success">Normal</small>
+            <small className="badge badge-secondary">Warning</small>
+            <small className="badge badge-warning">Serious warning</small>
+            <small className="badge badge-danger">Critical warning</small>
+          </div>
         </div>
-        <div className="card">
+        <div className="card m-5">
           <p className="mt-5" >Test {this.state.selectedTestID}</p>
           <Graph id={this.state.selectedTestID} getTestData={this.state.selectedTestData} />
         </div>

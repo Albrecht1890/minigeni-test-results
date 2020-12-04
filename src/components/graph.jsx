@@ -24,8 +24,8 @@ class Graph extends Component {
     let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis.tooltip.disabled = true;
     valueAxis.renderer.minWidth = 35;
-    valueAxis.min = 0
-    valueAxis.max = 200
+    valueAxis.min = 0;
+    valueAxis.max = 200;
 
     let series = chart.series.push(new am4charts.LineSeries());
     series.dataFields.dateX = "date";
@@ -39,25 +39,25 @@ class Graph extends Component {
     let range = valueAxis.axisRanges.create();
     range.value = 0;
     range.endValue = 50;
-    range.axisFill.fill = am4core.color('green')
+    range.axisFill.fill = am4core.color('green');
     range.axisFill.fillOpacity = 0.2;
     
     let range2 = valueAxis.axisRanges.create();
     range2.value = 50;
     range2.endValue = 100;
-    range2.axisFill.fill = am4core.color('grey')
+    range2.axisFill.fill = am4core.color('grey');
     range2.axisFill.fillOpacity = 0.2;
 
     let range3 = valueAxis.axisRanges.create();
     range3.value = 100;
     range3.endValue = 150;
-    range3.axisFill.fill = am4core.color('orange')
+    range3.axisFill.fill = am4core.color('orange');
     range3.axisFill.fillOpacity = 0.2;
 
     let range4 = valueAxis.axisRanges.create();
     range4.value = 150;
     range4.endValue = 200;
-    range4.axisFill.fill = am4core.color('red')
+    range4.axisFill.fill = am4core.color('red');
     range4.axisFill.fillOpacity = 0.2;
 
 

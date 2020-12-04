@@ -18,7 +18,7 @@ class Table extends Component {
   }
 
   getKeys = function() {
-    return Object.keys(this.props.data[0])
+    return Object.keys(this.props.data[0]);
   }
 
   getRowsData = function() {

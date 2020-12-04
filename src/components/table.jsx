@@ -11,8 +11,10 @@ class Table extends Component {
   }
 
   handleClick = (event) => {
-    this.props.selectTest(event.currentTarget.id)
-    this.props.updateGraph()
+    this.props.selectTest(event.currentTarget.id);
+    this.props.updateGraph();
+
+    event.preventDefault();
   }
 
   getKeys = function() {
@@ -26,7 +28,7 @@ class Table extends Component {
       return (
         <tr className="test-row" key={idx}>
           <RenderRow key={idx} data={row} keys={keys}/>
-          <td id={row.test_id} onClick={this.handleClick}><strong>+</strong></td>
+          <td id={row.test_id} onClick={this.handleClick}><a href="#"><small>Select</small></a></td>
         </tr>
       )
     })
